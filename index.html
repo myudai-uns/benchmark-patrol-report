@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ベンチマーク巡回レポート 2026/4/27</title>
 <style>
-:root{--bg:#000;--card:#16181c;--border:#2f3336;--text:#e7e9ea;--muted:#71767b;--accent:#1d9bf0;--like:#f91880;--rt:#00ba7c;--reply:#71767b}
+:root{--bg:#fff;--card:#f7f9f9;--border:#eff3f4;--text:#0f1419;--muted:#536471;--accent:#1d9bf0;--like:#f91880;--rt:#00ba7c;--reply:#536471}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif;background:var(--bg);color:var(--text);max-width:620px;margin:0 auto;border-left:1px solid var(--border);border-right:1px solid var(--border);min-height:100vh}
-.header{position:sticky;top:0;background:rgba(0,0,0,0.65);backdrop-filter:blur(12px);padding:12px 16px;border-bottom:1px solid var(--border);z-index:10}
+.header{position:sticky;top:0;background:rgba(255,255,255,0.85);backdrop-filter:blur(12px);padding:12px 16px;border-bottom:1px solid var(--border);z-index:10}
 .header h1{font-size:20px;font-weight:700}
 .header p{font-size:13px;color:var(--muted);margin-top:2px}
 .section-divider{padding:12px 16px;font-size:15px;font-weight:700;color:var(--accent);border-bottom:1px solid var(--border);background:rgba(29,155,240,0.04)}
@@ -17,7 +17,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 .tag-med{background:rgba(29,155,240,0.15);color:var(--accent)}
 .tag-low{background:rgba(113,118,123,0.15);color:var(--muted)}
 .tweet{display:flex;gap:12px;padding:12px 16px;border-bottom:1px solid var(--border);transition:background 0.15s}
-.tweet:hover{background:rgba(231,233,234,0.03)}
+.tweet:hover{background:rgba(0,0,0,0.03)}
 .avatar{width:40px;height:40px;border-radius:50%;background:var(--accent);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:#fff}
 .avatar.gov{background:#6366f1}
 .avatar.media{background:#f59e0b}
@@ -27,7 +27,10 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 .tweet-body{flex:1;min-width:0}
 .tweet-header{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
 .name{font-weight:700;font-size:15px}
-.handle{color:var(--muted);font-size:15px}
+.handle{color:var(--muted);font-size:15px;text-decoration:none}
+.handle:hover{text-decoration:underline}
+.name-link{color:var(--text);text-decoration:none}
+.name-link:hover{text-decoration:underline}
 .dot{color:var(--muted)}
 .time{color:var(--muted);font-size:15px}
 .tweet-text{margin-top:4px;font-size:15px;line-height:1.45;white-space:pre-wrap;word-break:break-word}
@@ -73,7 +76,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar">塩</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">塩崎彰久</span><span class="handle">@AkihisaShiozaki</span><span class="dot">·</span><span class="time">4月26日</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/AkihisaShiozaki" target="_blank"><span class="name">塩崎彰久</span></a><a class="handle" href="https://x.com/AkihisaShiozaki" target="_blank">@AkihisaShiozaki</a><span class="dot">·</span><span class="time">4月26日</span></div>
 <div class="tweet-text">【AIを「使う国」から「AIで動く国」へ 。AIホワイトペーパー2.0が描く日本の構造転換】
 エージェントAIの時代に、日本は何を守り、何を伸ばし、どんな社会を次の世代に渡すのか。</div>
 <div class="action-note">💡 根本さんの決済イノベーションPTとの政策接点あり。引用リポストで拡散トリガーに（前回ガバナンスで42K impの実績）</div>
@@ -88,7 +91,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar">鈴</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">鈴木憲和（農水大臣）</span><span class="handle">@norikazu_0130</span><span class="dot">·</span><span class="time">4月27日</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/norikazu_0130" target="_blank"><span class="name">鈴木憲和（農水大臣）</span></a><a class="handle" href="https://x.com/norikazu_0130" target="_blank">@norikazu_0130</a><span class="dot">·</span><span class="time">4月27日</span></div>
 <div class="tweet-text">27日早朝に発生した北海道を震源とする地震を受け、農林水産省として、人命第一の方針の下、地方自治体と連携し、
 ①農林水産関係の被害状況の迅速な把握
 ②国民に対する、適時的確な情報提供
@@ -105,7 +108,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar">鈴</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">鈴木憲和（農水大臣）</span><span class="handle">@norikazu_0130</span><span class="dot">·</span><span class="time">4月26日</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/norikazu_0130" target="_blank"><span class="name">鈴木憲和（農水大臣）</span></a><a class="handle" href="https://x.com/norikazu_0130" target="_blank">@norikazu_0130</a><span class="dot">·</span><span class="time">4月26日</span></div>
 <div class="tweet-text">宮城県塩釜港に伺い、3月末に発生した海上保安庁巡視船からの重油流出によるワカメなどへの被害と処理の現状を視察。
 
 現場の漁業者や自治体の皆様と意見交換しましたが、早期の賠償や次期作への準備など、ご要望や課題に対しては、漁業者の立場にたち、早急に関係省庁で対応します。</div>
@@ -118,7 +121,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar">高</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">高市早苗</span><span class="handle">@takaichi_sanae</span><span class="dot">·</span><span class="time">4月27日</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/takaichi_sanae" target="_blank"><span class="name">高市早苗</span></a><a class="handle" href="https://x.com/takaichi_sanae" target="_blank">@takaichi_sanae</a><span class="dot">·</span><span class="time">4月27日</span></div>
 <div class="tweet-text">本日5時24分頃、北海道十勝地方南部を震源とする地震が発生し、北海道浦幌町で最大震度5強の強い揺れを観測しました。
 津波の心配はありません。</div>
 <div class="tweet-actions">
@@ -133,7 +136,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar">小</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">小泉進次郎</span><span class="handle">@shinjirokoiz</span><span class="dot">·</span><span class="time">4月26日</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/shinjirokoiz" target="_blank"><span class="name">小泉進次郎</span></a><a class="handle" href="https://x.com/shinjirokoiz" target="_blank">@shinjirokoiz</a><span class="dot">·</span><span class="time">4月26日</span></div>
 <div class="tweet-text">今日は21日に発生した陸上自衛隊の戦車事故で殉職された3名の隊員の葬送式に出席するため、大分県の陸上自衛隊玖珠駐屯地に行きました。
 
 大切な仲間を失った同僚隊員が涙を流しながら献花をする様子から、部隊の絆の強さと悲しみの深さを痛感しています。</div>
@@ -144,7 +147,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar">小</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">小林鷹之</span><span class="handle">@kobahawk</span><span class="dot">·</span><span class="time">4月26日</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/kobahawk" target="_blank"><span class="name">小林鷹之</span></a><a class="handle" href="https://x.com/kobahawk" target="_blank">@kobahawk</a><span class="dot">·</span><span class="time">4月26日</span></div>
 <div class="tweet-text">物価高を上回る賃上げを実現し、経済の好循環を創る。
 そのためには、日本経済の屋台骨である中小・小規模事業者が賃上げの「原資」を得られる環境整備に国・自治体が率先して関与する必要があります。</div>
 <div class="tweet-actions"><span class="action"><span class="icon-like">❤️</span></span></div>
@@ -154,7 +157,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar">鈴</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">鈴木英敬</span><span class="handle">@eikeisuzuki</span><span class="dot">·</span><span class="time">4月26日</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/eikeisuzuki" target="_blank"><span class="name">鈴木英敬</span></a><a class="handle" href="https://x.com/eikeisuzuki" target="_blank">@eikeisuzuki</a><span class="dot">·</span><span class="time">4月26日</span></div>
 <div class="tweet-text">数年前には一時期、部員が８名となった昴学園野球部が、春季三重県大会で初優勝。全国唯一の全寮制県立高校。2018年、「日本一の下剋上」と言われ、TBS日曜劇場ドラマ「下剋上球児」のモデルにもなった県立白山高校野球部を率いた東監督のもと、選手達が一丸となってつかみ取った初優勝。</div>
 <div class="tweet-actions"><span class="action"><span class="icon-like">❤️</span></span></div>
 </div>
@@ -163,7 +166,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar">森</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">森下千里</span><span class="handle">@ChiiChiiiii</span><span class="dot">·</span><span class="time">4月26日</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/ChiiChiiiii" target="_blank"><span class="name">森下千里</span></a><a class="handle" href="https://x.com/ChiiChiiiii" target="_blank">@ChiiChiiiii</a><span class="dot">·</span><span class="time">4月26日</span></div>
 <div class="tweet-text">鈴木憲和農林水産大臣に申し入れをし、
 直接行くからと言っていただき、たった3日。
 こんなにも早く、現地に来ていただけるなんて、
@@ -179,7 +182,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar">神</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">神田潤一</span><span class="handle">@Jun1CanDo</span><span class="dot">·</span><span class="time">4月27日</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/Jun1CanDo" target="_blank"><span class="name">神田潤一</span></a><a class="handle" href="https://x.com/Jun1CanDo" target="_blank">@Jun1CanDo</a><span class="dot">·</span><span class="time">4月27日</span></div>
 <div class="tweet-text">（6:00）起床、東京は大雨
 （6:30-7:15）地震情報を聞きながら琥太郎の散歩
 当たり前のように公園に直行し、貸切状態の雨の公園を満喫
@@ -191,7 +194,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar">村</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">村井英樹</span><span class="handle">@muraihideki</span><span class="dot">·</span><span class="time">4月26日</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/muraihideki" target="_blank"><span class="name">村井英樹</span></a><a class="handle" href="https://x.com/muraihideki" target="_blank">@muraihideki</a><span class="dot">·</span><span class="time">4月26日</span></div>
 <div class="tweet-text">＜地元活動～大型プール整備～＞
 今日は、自治会総会などに出席。
 川口市と隣接する自治会では、川口に整備予定の大型プールが話題になりました。</div>
@@ -202,7 +205,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar">小</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">小林史明</span><span class="handle">@kb2474</span><span class="dot">·</span><span class="time">4月23日</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/kb2474" target="_blank"><span class="name">小林史明</span></a><a class="handle" href="https://x.com/kb2474" target="_blank">@kb2474</a><span class="dot">·</span><span class="time">4月23日</span></div>
 <div class="tweet-text">4/15に党の日本成長戦略本部から高市総理へ提出した「働き方改革の見直し」と「エッセンシャルワーカーの人材育成・確保」に関する提言について動画で解説します。</div>
 <div class="tweet-actions"><span class="action"><span class="icon-like">❤️</span></span></div>
 </div>
@@ -211,7 +214,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar">岸</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">岸田文雄</span><span class="handle">@kishida230</span><span class="dot">·</span><span class="time">4月25日</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/kishida230" target="_blank"><span class="name">岸田文雄</span></a><a class="handle" href="https://x.com/kishida230" target="_blank">@kishida230</a><span class="dot">·</span><span class="time">4月25日</span></div>
 <div class="tweet-text">オバマ大統領が広島を訪問し、広島平和公園で献花をしてから10年ということで、読売新聞のインタビューを私の広島事務所で受けました。
 
 オバマ大統領のこの歴史的な広島訪問が、後のG7広島サミットに繋がって…</div>
@@ -222,7 +225,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar">大</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">大空幸星</span><span class="handle">@ozorakoki</span><span class="dot">·</span><span class="time">4月26日</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/ozorakoki" target="_blank"><span class="name">大空幸星</span></a><a class="handle" href="https://x.com/ozorakoki" target="_blank">@ozorakoki</a><span class="dot">·</span><span class="time">4月26日</span></div>
 <div class="tweet-text">片山大臣: 「東京都が日本の成長を牽引していただくように、ぜひ取り組みを進めてまいりたい」「（東京都の政策課題は）我々の成長戦略と地域未来戦略と、軌を一にしてこそ、爆発的な力がある」。
 
 その通りです。</div>
@@ -236,7 +239,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar local">郡</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">郡山市</span><span class="handle">@gakuto_koriyama</span><span class="dot">·</span><span class="time">直近投稿</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/gakuto_koriyama" target="_blank"><span class="name">郡山市</span></a><a class="handle" href="https://x.com/gakuto_koriyama" target="_blank">@gakuto_koriyama</a><span class="dot">·</span><span class="time">直近投稿</span></div>
 <div class="tweet-text">郡山市の直近投稿 → スクリーンショットで確認</div>
 <div class="tweet-actions"><span class="action"><span class="icon-like">❤️</span></span></div>
 </div>
@@ -245,7 +248,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar media">民</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">福島民友新聞社</span><span class="handle">@fminyu</span><span class="dot">·</span><span class="time">直近投稿</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/fminyu" target="_blank"><span class="name">福島民友新聞社</span></a><a class="handle" href="https://x.com/fminyu" target="_blank">@fminyu</a><span class="dot">·</span><span class="time">直近投稿</span></div>
 <div class="tweet-text">福島民友の最新ニュース → 投稿ネタ候補がないか確認</div>
 <div class="tweet-actions"><span class="action"><span class="icon-like">❤️</span></span></div>
 </div>
@@ -254,7 +257,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar media">民</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">福島民報社</span><span class="handle">@fksminpo</span><span class="dot">·</span><span class="time">直近投稿</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/fksminpo" target="_blank"><span class="name">福島民報社</span></a><a class="handle" href="https://x.com/fksminpo" target="_blank">@fksminpo</a><span class="dot">·</span><span class="time">直近投稿</span></div>
 <div class="tweet-text">福島民報の最新ニュース → 投稿ネタ候補がないか確認</div>
 <div class="tweet-actions"><span class="action"><span class="icon-like">❤️</span></span></div>
 </div>
@@ -263,7 +266,7 @@ body{font-family:-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN",sans-serif
 <div class="tweet">
 <div class="avatar gov">復</div>
 <div class="tweet-body">
-<div class="tweet-header"><span class="name">復興庁</span><span class="handle">@Fukkocho_JAPAN</span><span class="dot">·</span><span class="time">直近投稿</span></div>
+<div class="tweet-header"><a class="name-link" href="https://x.com/Fukkocho_JAPAN" target="_blank"><span class="name">復興庁</span></a><a class="handle" href="https://x.com/Fukkocho_JAPAN" target="_blank">@Fukkocho_JAPAN</a><span class="dot">·</span><span class="time">直近投稿</span></div>
 <div class="tweet-text">復興庁の直近投稿 → 福島復興関連の情報確認</div>
 <div class="tweet-actions"><span class="action"><span class="icon-like">❤️</span></span></div>
 </div>
